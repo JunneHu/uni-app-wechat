@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "日历",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#F25E63",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-calendar": "/components/c-calendar/c-calendar"
+  }
+}

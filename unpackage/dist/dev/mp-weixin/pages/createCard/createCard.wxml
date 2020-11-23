@@ -1,0 +1,1 @@
+<view><view class="crad-bg"><my-share vue-id="1f6a1e00-1" shareImg="{{shareImg}}" imgScan="{{imgScan}}" txtArr="{{txtArr}}" shareImgW="{{750}}" shareImgH="{{1448}}" imgArr="{{imgArr}}" bind:__l="__l"></my-share></view></view>

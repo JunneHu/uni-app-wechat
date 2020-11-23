@@ -1,0 +1,100 @@
+.calendar {
+  width: 100%;
+  height: auto;
+  color: #fff;
+}
+.calendar .c-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background: #F25E63;
+}
+.calendar .c-top .item {
+  padding: 10px;
+}
+.calendar .head {
+  color: #333;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5px;
+}
+.calendar .head .rows {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.calendar .head text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 16px;
+  padding: 5px 0;
+  line-height: 30px;
+  text-align: center;
+}
+.calendar .week {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  color: #333;
+}
+.calendar .week .rows {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.calendar .week .rows text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+}
+.calendar .week .rows text.weekend {
+  color: #FF4634;
+}
+.calendar .week .rows.tr1 text.today .txt {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: #F25E63;
+  color: #fff;
+  font-size: 14px;
+}
+.calendar .week .rows.tr2 text {
+  padding-bottom: 15px;
+  font-size: 8px;
+  line-height: 12px;
+}
+

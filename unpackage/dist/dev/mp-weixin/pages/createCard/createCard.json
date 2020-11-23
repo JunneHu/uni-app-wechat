@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "生成图片",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "my-share": "/components/my-share/my-share"
+  }
+}

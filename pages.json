@@ -1,0 +1,45 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle": "custom"
+			}
+		},{
+		    "path" : "pages/createCard/createCard",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "生成图片",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+		    }
+		    
+		},{
+		    "path" : "pages/list/list",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "list",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+		    }
+		    
+		},{
+		    "path" : "pages/calendar/calendar",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "日历",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F25E63",
+				"navigationBarTextStyle":"white"
+		    }
+		    
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

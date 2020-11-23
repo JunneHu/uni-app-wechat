@@ -1,0 +1,8 @@
+.fit {
+  padding-top: 32px;
+}
+.crad-bg {
+  width: 100%;
+  height: 100vh;
+}
+

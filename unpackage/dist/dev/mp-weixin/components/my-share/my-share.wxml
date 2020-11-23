@@ -1,0 +1,1 @@
+<view class="canvas" style="{{'width:'+(w+'px')+';'+('margin:'+('0 auto')+';')}}"><canvas style="{{'width:'+(w+'px')+';'+('height:'+(h+'px')+';')}}" canvas-id="myCanvas"></canvas><view data-event-opts="{{[['tap',[['savePhoto',['$event']]]]]}}" class="btn" bindtap="__e">保存</view></view>

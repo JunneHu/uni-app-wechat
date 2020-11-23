@@ -1,0 +1,1 @@
+<block wx:if="{{fit}}"><view class="fit">11</view></block>

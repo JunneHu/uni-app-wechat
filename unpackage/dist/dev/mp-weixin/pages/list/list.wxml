@@ -1,0 +1,1 @@
+<view><wfalls-flow class="vue-ref" vue-id="2e637200-1" list="{{list}}" data-ref="wfalls" data-event-opts="{{[['^finishLoad',[['getLoadNum']]]]}}" bind:finishLoad="__e" bind:__l="__l"></wfalls-flow></view>

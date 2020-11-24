@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/player/player",
     "pages/index/index",
     "pages/createCard/createCard",
     "pages/list/list",

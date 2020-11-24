@@ -1,0 +1,48 @@
+.player-bg {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  background: #F25E63;
+}
+.player-bg .list {
+  font-size: 20px;
+  line-height: 28px;
+  color: #333;
+}
+.player-bg .list.active {
+  color: #fff;
+}
+@-webkit-keyframes rotate {
+0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    /*从0度开始*/
+}
+100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+    /*360度结束*/
+}
+}
+@keyframes rotate {
+0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    /*从0度开始*/
+}
+100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+    /*360度结束*/
+}
+}
+

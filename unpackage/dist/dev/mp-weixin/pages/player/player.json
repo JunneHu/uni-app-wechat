@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "音频播放",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "imt-audio": "/components/imt-audio/imt-audio"
+  }
+}

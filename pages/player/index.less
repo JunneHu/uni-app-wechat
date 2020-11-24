@@ -1,0 +1,26 @@
+.player-bg {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: #F25E63;
+	.list {
+		font-size:20px;
+		line-height: 28px;
+		color: #333;
+		&.active {
+			color: #fff;
+		}
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+	}
+}
+
+

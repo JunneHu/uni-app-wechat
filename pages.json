@@ -1,12 +1,22 @@
 {
 	"pages": [
 		{
+		    "path" : "pages/player/player",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "音频播放",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+		    }
+		    
+		},{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app",
 				"navigationStyle": "custom"
 			}
-		},{
+		},
+		{
 		    "path" : "pages/createCard/createCard",
 		    "style" :                                                                                    
 		    {
@@ -35,6 +45,7 @@
 		    }
 		    
 		}
+        
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

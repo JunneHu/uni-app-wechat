@@ -98,18 +98,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   onHide: function onHide() {
     console.log('App Hide');
   },
-  methods: {
-    // uni.getSystemInfo({
-    // 	success: (res) => {
-    // 		console.log(res.model)
-    // 		if (res.model.search('iPhone X') != -1) {
-    // 			this.fit = true
-    // 		} else {
-    // 			this.fit = false;
-    // 		}
-    // 	}
-    // });
-  } };exports.default = _default;
+  methods: {} };exports.default = _default;
 
 /***/ }),
 /* 8 */

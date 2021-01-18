@@ -1,4 +1,157 @@
 .fit {
-  padding-top: 30px;
+  padding-top: 120rpx;
+}
+.fit .title {
+  text-align: center;
+  height: 40rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 40rpx;
+}
+.fit .banner {
+  width: 750rpx;
+  height: 350rpx;
+}
+.fit .banner image {
+  width: 750rpx;
+  height: 350rpx;
+}
+.fit .content {
+  width: 750rpx;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 36rpx 36rpx 0 0;
+  padding: 36rpx 0;
+  box-sizing: border-box;
+  color: #333;
+}
+.fit .content .search-bg {
+  width: 678rpx;
+  height: 72rpx;
+  margin: 0 auto 36rpx;
+  border: 2rpx solid var(--red);
+  border-radius: 36rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  line-height: 70rpx;
+  color: #666;
+}
+.fit .content .search-bg .cuIcon-search {
+  display: inline-block;
+  margin-right: 20rpx;
+  font-size: 32rpx;
+}
+.fit .content .search-bg .btn {
+  width: 180rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  position: absolute;
+  text-align: center;
+  line-height: 70rpx;
+  box-sizing: border-box;
+  right: 0;
+  top: 0;
+}
+.fit .content .menu-bg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 750rpx;
+}
+.fit .content .menu-bg .item {
+  width: 150rpx;
+  text-align: center;
+  margin-bottom: 36rpx;
+}
+.fit .content .menu-bg .item image {
+  width: 88rpx;
+  height: 88rpx;
+  margin-bottom: 10rpx;
+}
+.fit .content .menu-bg .item .name {
+  line-height: 30rpx;
+  height: 30rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.fit .content .line-banner {
+  margin-bottom: 36rpx;
+}
+.fit .content .line-banner .swiper,
+.fit .content .line-banner .swiper-item,
+.fit .content .line-banner .swiper-item .img {
+  width: 678rpx;
+  height: 96rpx;
+  margin: 0 auto;
+}
+.fit .content .pro-con {
+  width: 750rpx;
+  padding: 0 36rpx;
+  box-sizing: border-box;
+}
+.fit .content .pro-con .ul-name {
+  height: 36rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333333;
+  line-height: 36rpx;
+  margin-bottom: 36rpx;
+  padding-left: 25rpx;
+  position: relative;
+}
+.fit .content .pro-con .ul-name:before {
+  content: '';
+  width: 6rpx;
+  height: 28rpx;
+  background: var(--red);
+  position: absolute;
+  left: 0;
+  top: 4rpx;
+}
+.fit .content .pro-con .ul-name .more {
+  float: right;
+  font-size: 24rpx;
+  color: #999;
+}
+.fit .content .pro-con .ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 678rpx;
+}
+.fit .content .pro-con .ul .li {
+  width: 329rpx;
+  margin: 0 20rpx 20rpx 0;
+}
+.fit .content .pro-con .ul .li:nth-child(2n) {
+  margin-right: 0;
+}
+.fit .content .pro-con .ul .li image {
+  width: 329rpx;
+  height: 180rpx;
+  display: block;
+  margin-bottom: 20rpx;
+  border-radius: 12rpx;
+}
+.fit .content .pro-con .ul .li .c-name {
+  height: 32rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+  line-height: 32rpx;
+  margin-bottom: 10rpx;
+}
+.fit .content .pro-con .ul .li .price {
+  height: 36rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: var(--red);
+  line-height: 36rpx;
+  margin-bottom: 16rpx;
 }
 

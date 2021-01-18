@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/player/player",
-    "pages/index/index",
+    "pages/choseCity/choseCity",
     "pages/createCard/createCard",
+    "pages/index/index",
     "pages/list/list",
+    "pages/player/player",
     "pages/calendar/calendar"
   ],
   "subPackages": [],
@@ -12,6 +13,26 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#3162F4",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/icon_home.png",
+        "selectedIconPath": "static/images/icon_home_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "static/images/icon_my.png",
+        "selectedIconPath": "static/images/icon_my_HL.png",
+        "text": "我的"
+      }
+    ]
   },
   "usingComponents": {}
 }

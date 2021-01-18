@@ -10,20 +10,23 @@
 			console.log('App Hide')
 		},
 		methods:{
-			// uni.getSystemInfo({
-			// 	success: (res) => {
-			// 		console.log(res.model)
-			// 		if (res.model.search('iPhone X') != -1) {
-			// 			this.fit = true
-			// 		} else {
-			// 			this.fit = false;
-			// 		}
-			// 	}
-			// });
 		}
 	}
 </script>
 
 <style>
 	/*每个页面公共css */
+	@import "static/css/main.wxss";
+	@import "static/css/icon.wxss";
+	button,
+	view,
+	text {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	button {
+		border: none !important;
+	}
 </style>

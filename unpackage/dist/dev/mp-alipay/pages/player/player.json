@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "音频播放",
+  "pullRefresh": false,
+  "usingComponents": {
+    "imt-audio": "/components/imt-audio/imt-audio"
+  }
+}

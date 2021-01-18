@@ -1,0 +1,1 @@
+<view><block wx:if="{{showCity}}"><chose-city bind:selectCity="__e" bind:closeModal="__e" vue-id="7f711a30-1" data-event-opts="{{[['^selectCity',[['selectCity']]],['^closeModal',[['closeModal']]]]}}" bind:__l="__l"></chose-city></block></view>

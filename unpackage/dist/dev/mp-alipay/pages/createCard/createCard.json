@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "生成图片",
+  "pullRefresh": false,
+  "usingComponents": {
+    "my-share": "/components/my-share/my-share"
+  }
+}

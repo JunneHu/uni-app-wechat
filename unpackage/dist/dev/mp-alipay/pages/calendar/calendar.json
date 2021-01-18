@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "日历",
+  "pullRefresh": false,
+  "titleBarColor": "#F25E63",
+  "usingComponents": {
+    "uni-calendar": "/components/c-calendar/c-calendar"
+  }
+}

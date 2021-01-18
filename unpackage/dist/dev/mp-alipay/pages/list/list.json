@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "list",
+  "pullRefresh": false,
+  "usingComponents": {
+    "wfalls-flow": "/components/wfalls-flow/wfalls-flow"
+  }
+}

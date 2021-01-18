@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/orderList/orderList",
     "pages/choseCity/choseCity",
     "pages/createCard/createCard",
     "pages/index/index",

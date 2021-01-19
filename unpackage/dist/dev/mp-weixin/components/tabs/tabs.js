@@ -137,10 +137,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 var _default2 =
 {
   name: 'tabs',
@@ -180,7 +176,7 @@ var _default2 =
         // 激活字体颜色
         activeColor: '#333333',
         // item宽度 0为自动
-        itemWidth: 0,
+        itemWidth: 200,
         // 下划线左右边距，文字宽度加边距 rpx
         underLinePadding: 0,
         // 下划线宽度 rpx  注意：设置了此值 underLinePadding 失效

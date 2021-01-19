@@ -68,9 +68,9 @@
   height: 100%;
   display: inline-block;
   text-align: center;
-  margin-right: 40rpx;
   position: relative;
   text-align: center;
+  padding: 0 30rpx;
   color: #999999;
 }
 ._tab-box .scroll-view-h ._scroll-content ._tab-item-box ._item._active.data-v-21da2544 {

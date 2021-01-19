@@ -1,0 +1,5 @@
+.swiper-item .li {
+  padding: 36rpx;
+  box-sizing: border-box;
+}
+

@@ -1,13 +1,13 @@
 {
   "pages": [
+    "pages/luckDraw/luckDraw",
     "pages/index/index",
     "pages/list/list",
     "pages/orderList/orderList",
     "pages/choseCity/choseCity",
     "pages/createCard/createCard",
     "pages/player/player",
-    "pages/calendar/calendar",
-    "pages/luckDraw/luckDraw"
+    "pages/calendar/calendar"
   ],
   "subPackages": [],
   "window": {

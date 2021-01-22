@@ -1,11 +1,20 @@
 {
 	"pages": [ {
+            "path" : "pages/luckDraw/luckDraw",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F81E2A"
+            }
+            
+        }, {
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app",
 				"navigationStyle": "custom"
 			}
-		}, {
+		},{
 			"path": "pages/list/list",
 			"style": {
 				"navigationBarTitleText": "list",
@@ -54,15 +63,7 @@
 			}
 
 		}
-        ,{
-            "path" : "pages/luckDraw/luckDraw",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+        
     ],
 	"permission": {
 		"scope.userLocation": {

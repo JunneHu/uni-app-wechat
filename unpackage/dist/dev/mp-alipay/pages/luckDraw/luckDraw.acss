@@ -1,0 +1,108 @@
+.draw-bg.data-v-be4943b4 {
+  background: #F81E2A;
+  width: 750rpx;
+  min-height: 100vh;
+  padding: 50rpx 35rpx;
+  box-sizing: border-box;
+}
+.draw-bg .cell.data-v-be4943b4 {
+  width: 680rpx;
+  height: 680rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.draw-bg .cell .CellItem.data-v-be4943b4 {
+  width: 212rpx;
+  height: 200rpx;
+  background: -webkit-linear-gradient(43deg, #FFFFFF 0%, #FFE5D7 100%);
+  background: linear-gradient(47deg, #FFFFFF 0%, #FFE5D7 100%);
+  box-shadow: 0 12rpx 0 0 #C54627;
+  border-radius: 8rpx;
+  margin-right: 22rpx;
+  margin-bottom: 22rpx;
+  text-align: center;
+}
+.draw-bg .cell .CellItem.bg.data-v-be4943b4 {
+  background: #FFDAA1;
+}
+.draw-bg .cell .CellItem.data-v-be4943b4:nth-child(3n) {
+  margin-right: 0;
+}
+.draw-bg .cell .CellItem.btn.data-v-be4943b4 {
+  width: 206rpx;
+  height: 206rpx;
+  background: -webkit-linear-gradient(top, #FFFBEB 0%, #FCE25A 100%);
+  background: linear-gradient(180deg, #FFFBEB 0%, #FCE25A 100%);
+  box-shadow: 0 12rpx 0 0 #E39F43;
+  border-radius: 50%;
+}
+.draw-bg .cell .CellItem.btn .ItemContent.data-v-be4943b4 {
+  width: 182rpx;
+  height: 182rpx;
+  border: 4rpx solid #FFCF38;
+  border-radius: 50%;
+}
+.draw-bg .cell .CellItem.btn .ItemContent .btn-txt.data-v-be4943b4 {
+  width: 100rpx;
+  height: 104rpx;
+  margin: 22rpx auto 8rpx;
+  font-size: 48rpx;
+  font-weight: 500;
+  color: #CA1620;
+  line-height: 52rpx;
+}
+.draw-bg .cell .CellItem.btn .ItemContent .btn-num.data-v-be4943b4 {
+  display: inline-block;
+  padding: 0 14rpx;
+  box-sizing: border-box;
+  height: 36rpx;
+  background: #F5C24C;
+  box-shadow: 0 -2rpx 0 0 rgba(255, 255, 255, 0.5);
+  border-radius: 18rpx;
+  font-size: 20rpx;
+  font-weight: 500;
+  color: #A2351A;
+  line-height: 36rpx;
+  margin: 0 auto;
+}
+.draw-bg .cell .CellItem .ItemContent.data-v-be4943b4 {
+  width: 192rpx;
+  height: 180rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #FFEDE8;
+  margin: 10rpx auto;
+}
+.draw-bg .cell .CellItem .ItemImage.data-v-be4943b4 {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 2rpx auto 6rpx;
+  display: block;
+}
+.draw-bg .cell .CellItem .text.data-v-be4943b4 {
+  margin: 0 auto 0;
+  width: 108rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  color: #A2351A;
+  line-height: 30rpx;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+

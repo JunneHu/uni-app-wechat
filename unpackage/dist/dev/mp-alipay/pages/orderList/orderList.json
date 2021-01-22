@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "",
+  "pullRefresh": false,
+  "usingComponents": {
+    "tabs": "/components/tabs/tabs"
+  }
+}

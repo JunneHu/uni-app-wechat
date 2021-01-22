@@ -3,6 +3,6 @@
   "enablePullDownRefresh": false,
   "navigationStyle": "custom",
   "usingComponents": {
-    "wfalls-flow": "/components/wfalls-flow/wfalls-flow"
+    "eiml-flow": "/components/eiml-flow-layout/eiml-flow-layout"
   }
 }

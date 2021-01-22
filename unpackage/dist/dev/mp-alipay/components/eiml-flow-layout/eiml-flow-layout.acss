@@ -1,0 +1,35 @@
+
+.viewSpaceBetween {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+}
+.column {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+}
+.itemTitle {
+	font-size: 26rpx;
+	color: #666;
+	line-height: 40rpx;
+	margin-bottom: 10rpx;
+}
+.itemName {
+	font-size: 32rpx;
+	margin: 20rpx 0;
+	line-height: 40rpx;
+}
+.itemPrice {
+	font-size: 24rpx;
+	color: #666;
+	line-height: 30rpx;
+	margin-bottom: 20rpx;
+}
+

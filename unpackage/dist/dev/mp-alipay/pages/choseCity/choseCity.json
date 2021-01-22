@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "",
+  "pullRefresh": false,
+  "usingComponents": {
+    "chose-city": "/components/chose-city/chose-city"
+  }
+}

@@ -1,102 +1,89 @@
 <template>
-	<view>
-		<wfalls-flow :list="list" ref="wfalls" @finishLoad="getLoadNum"></wfalls-flow>
+	<view :class="fit ? 'fit' : ''">
+		<eimlFlow :list="list" :columnNum="2"></eimlFlow>
 	</view>
 </template>
 
 <script>
-	import wfallsFlow from '@/components/wfalls-flow/wfalls-flow.vue'
-	const list =[{
-		image:'https://fulu-mall.oss-cn-hangzhou.aliyuncs.com/fb0b217c189648b7a0e576f4e440c156.png',
-		id:'222',
-		content:'111'
-	},
-	{
-		image:'https://fulu-mall.oss-cn-hangzhou.aliyuncs.com/f8a01eb3aa0b4df08501f87d3f8bf956.png',
-		id:'222',
-		content:'111'
-	},
-	{
-		image:'https://fulu-mall.oss-cn-hangzhou.aliyuncs.com/f8a01eb3aa0b4df08501f87d3f8bf956.png',
-		id:'222',
-		content:'111'
-	},
-	{
-		image:'https://fulu-mall.oss-cn-hangzhou.aliyuncs.com/f8a01eb3aa0b4df08501f87d3f8bf956.png',
-		id:'222',
-		content:'111'
-	},
-	{
-		image:'https://fulu-mall.oss-cn-hangzhou.aliyuncs.com/f8a01eb3aa0b4df08501f87d3f8bf956.png',
-		id:'222',
-		content:'111'
-	},
-	{
-		image:'https://fulu-mall.oss-cn-hangzhou.aliyuncs.com/f8a01eb3aa0b4df08501f87d3f8bf956.png',
-		id:'222',
-		content:'111'
-	}]
+	import config from '../../config/index.js'
+	import {
+		httpsRequest
+	} from '../../utils/index.js';
+	import eimlFlow from '@/components/eiml-flow-layout/eiml-flow-layout.vue'
 	export default {
 		components: {
-			wfallsFlow
+			eimlFlow
 		},
 		data() {
 			return {
+				fit:false,
 				list: [],
-				isNewRenderDone: false //锁的作用
+				total: -1,
+				pageTotal: 0,
+				isLoading: false,
+				noMoreData: false,
+				postData: {
+					citycode: '330100',
+					pageIndex: 1,
+					pageSize: 10
+				}
 			}
 		},
 		methods: {
-			getLoadNum(num) {
-				console.log('共加载了:' + num);
-				!this.isNewRenderDone && uni.hideLoading()
-				this.isNewRenderDone = true
+			getList() {
+				if (this.isLoading) return;
+				this.isLoading = true
+				uni.showLoading({
+					title: '正在加载更多'
+				})
+				httpsRequest(config.api.DuMovieHotMovieList, 'GET', this.postData, (data) => {
+					this.isLoading = false
+					uni.hideLoading()
+					if (data.code === '1000') {
+						const {
+							list,
+							pageTotal,
+							total,
+							current
+						} = data.data
+						this.list = [...this.list, ...list]
+						this.total = total
+						this.pageTotal = pageTotal
+						if (current === pageTotal) {
+							this.noMoreData = true
+						} else {
+							this.noMoreData = false
+						}
+					}
+				}, false);
 			}
 		},
 		onLoad() {
-			// 模拟首次加载列表数据
-			setTimeout(() => {
-				this.list = list;
-				this.$refs.wfalls.init();
-			}, 1000)
+			const res = uni.getSystemInfoSync()
+			if (res.model.search('iPhone X') != -1) {
+				this.fit = true
+			} else {
+				this.fit = false
+			}
+			this.getList()
 		},
 		onReachBottom() {
-			console.log('onReachBottom');
-			// 加锁，避免在加载更多时用户频繁下拉导致的重复触发而渲染异常
-			if (!this.isNewRenderDone) return;
-			this.isNewRenderDone = false
-			uni.showLoading({
-				title: '正在加载更多'
-			})
-			// 模拟分页请求 (加载更多)
-			setTimeout(() => {
-				const nextData = JSON.parse(JSON.stringify(this.list.slice(0, 10)))
-				this.list.push(...nextData);
-				// this.$nextTick(()=>{
-				//     this.$refs.wfalls.handleViewRender();
-				// })
-				// APP上触发不了还是setTimeout万能
-				setTimeout(() => {
-					this.$refs.wfalls.handleViewRender();
-				}, 0)
-			}, 800)
+			if (this.pageTotal > this.postData.pageIndex) {
+				this.postData.pageIndex += 1;
+				this.getList()
+			}
 		},
 		onPullDownRefresh() {
-			// 模拟更新新数据
-			const newData = JSON.parse(JSON.stringify(this.list.slice(0, 10)))
-			setTimeout(() => {
-				this.list = newData;
-				this.$refs.wfalls.init()
-				uni.stopPullDownRefresh()
-				uni.showToast({
-					title: '刷新成功',
-					icon: 'none'
-				})
-			}, 800)
+			this.list = [];
+			this.postData.pageIndex = 1;
+			this.getList()
+			uni.stopPullDownRefresh()
 		}
 	}
 </script>
 
 <style>
-
+	.fit {
+		padding-top: 120rpx;
+	}
 </style>

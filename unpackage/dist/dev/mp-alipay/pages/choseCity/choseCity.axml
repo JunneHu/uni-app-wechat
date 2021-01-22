@@ -1,0 +1,1 @@
+<view><block a:if="{{showCity}}"><chose-city onSelectCity="__e" onCloseModal="__e" vue-id="7f671a06-1" data-event-opts="{{[['^selectCity',[['selectCity']]],['^closeModal',[['closeModal']]]]}}" onVueInit="__l"></chose-city></block></view>

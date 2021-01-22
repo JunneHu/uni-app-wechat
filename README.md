@@ -1,5 +1,6 @@
 #选择城市，城市搜索弹窗
 ## 引入
+```
 import choseCity from "@/components/chose-city/chose-city"
 export default {
 	components: {
@@ -20,8 +21,11 @@ export default {
 		},
 	}
 }
+```
 ## 页面引用
+```
 <chose-city @selectCity="selectCity" v-if="showCity" @closeModal="closeModal"></chose-city>
 showCity：弹窗是否显示
 selectCity：选择后的回调
 closeModal：点击取消的回调
+```

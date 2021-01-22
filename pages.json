@@ -1,5 +1,19 @@
 {
-	"pages": [{
+	"pages": [ {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "list",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		},{
             "path" : "pages/orderList/orderList",
             "style" :                                                                                    
             {
@@ -23,20 +37,6 @@
 			}
 
 		}, {
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "pages/list/list",
-			"style": {
-				"navigationBarTitleText": "list",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
-
-		}, {
 			"path": "pages/player/player",
 			"style": {
 				"navigationBarTitleText": "音频播放",
@@ -54,6 +54,15 @@
 			}
 
 		}
+        ,{
+            "path" : "pages/luckDraw/luckDraw",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"permission": {
 		"scope.userLocation": {

@@ -1,16 +1,38 @@
 {
   "pages": [
-    "pages/list/list",
-    "pages/player/player",
     "pages/index/index",
+    "pages/list/list",
+    "pages/orderList/orderList",
+    "pages/choseCity/choseCity",
     "pages/createCard/createCard",
-    "pages/calendar/calendar"
+    "pages/player/player",
+    "pages/calendar/calendar",
+    "pages/luckDraw/luckDraw"
   ],
   "subPackages": [],
   "window": {
     "defaultTitle": "uni-app",
     "titleBarColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "textColor": "#333333",
+    "selectedColor": "#3162F4",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "static/images/icon_home.png",
+        "activeIcon": "static/images/icon_home_HL.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "name": "我的",
+        "icon": "static/images/icon_my.png",
+        "activeIcon": "static/images/icon_my_HL.png"
+      }
+    ]
   },
   "usingComponents": {}
 }

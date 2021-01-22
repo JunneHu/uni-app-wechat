@@ -1,1 +1,1 @@
-<view><wfalls-flow vue-id="2e5971d6-1" list="{{list}}" ref="__r" data-ref="wfalls" data-event-opts="{{[['^finishLoad',[['getLoadNum']]]]}}" onFinishLoad="__e" onVueInit="__l"></wfalls-flow></view>
+<view class="{{(fit?'fit':'')}}"><eiml-flow vue-id="2e5971d6-1" list="{{list}}" columnNum="{{2}}" onVueInit="__l"></eiml-flow></view>

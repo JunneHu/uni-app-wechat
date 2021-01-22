@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<tabs :tabData="dataList" :activeIndex="activeTab" @tabClick='choseTab' />
+		<tabs ref="child" :tabData="dataList" :activeIndex="activeTab" @tabClick='choseTab' :config='config' />
 		<swiper class="swiper" :current="activeTab" @change="change">
 			<swiper-item class="swiper-item" v-for="(item,index) in dataList" :key="index">
 				<view class="li" v-for="(v,i) in item.list">
@@ -20,17 +20,58 @@
 		data() {
 			return {
 				activeTab: 0,
+				config:{
+					key: 'title',
+				},
 				dataList: [{
-					name: '全部',
+					title: '全部',
 					list: [{
-						"name": "1",
-						"logo": "https://gw.alicdn.com/tfscom/i3/O1CN01tbQl4m1EiN7QSdXns_!!6000000000385-0-alipicbeacon.jpg"
+						"name": "1"
 					}]
 				},{
-					name: '热门推荐',
+					title: '热门推荐',
 					list: [{
-						"name": "2",
-						"logo": "https://gw.alicdn.com/tfscom/i3/O1CN01tbQl4m1EiN7QSdXns_!!6000000000385-0-alipicbeacon.jpg"
+						"name": "2"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "3"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "4"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "5"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "6"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "7"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "8"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "9"
+					}]
+				},{
+					title: '热门推荐',
+					list: [{
+						"name": "10"
 					}]
 				}]
 			};
@@ -41,6 +82,7 @@
 			},
 			change(e){
 				this.activeTab = e.detail.current;
+				this.$refs.child.tabToIndex(this.activeTab)
 			}
 		}
 	}

@@ -4,12 +4,11 @@
 			<view class="_scroll-content">
 				<view class="_tab-item-box" :class="[defaultConfig.itemWidth ? '_clamp' : '_flex']">
 					<block v-for="(item, index) in tabList" :key="index">
-
 						<view class="_item" :id="'_tab_'+index" :class="{ '_active': tagIndex === index }" :style="{color: tagIndex == index ? defaultConfig.activeColor : defaultConfig.color, 'width': defaultConfig.itemWidth ? defaultConfig.itemWidth + 'rpx' : ''}"
 						 @click="tabClick(index)">
 							<view class="_underline" v-if="tagIndex === index" :style="{
-									transform: 'translateX(' + (defaultConfig.itemWidth?(defaultConfig.itemWidth/2-18) : 0)+ 'rpx)',
-									width: slider.width + 'px',
+									transform:'translateX('+(defaultConfig.itemWidth/2-defaultConfig.underLineWidth/2-30)+'rpx)',
+									width: defaultConfig.underLineWidth + 'rpx',
 									height: defaultConfig.underLineHeight + 'rpx',
 									backgroundColor: defaultConfig.underLineColor,
 								}" />
